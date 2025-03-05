@@ -4,8 +4,7 @@ const nav = document.querySelector("nav");
 const header = document.querySelector("header");
 const aboutTitle = document.querySelector(".aboutTitle");
 const aboutImg = document.querySelector(".aboutImg");
-const skills = document.getElementById("skills");
-const folio = document.getElementById("folio");
+
 const contact = document.getElementById("contact");
 const footer = document.getElementById("footer");
 const textarea = document.querySelector("textarea");
@@ -149,41 +148,3 @@ footer.innerHTML = `
 </div>
 
 `;
-
-/*------ Observer translate X ------*/
-
-const observer = new IntersectionObserver(
-  (entrer) => {
-    for (const entry of entrer) {
-      if (entry.isIntersecting) {
-        entry.target.style.transform = "translateX(0px)";
-        entry.target.style.opacity = "1";
-        entry.target.style.right = "0px";
-      }
-    }
-  },
-  {
-    threshold: 0.5,
-  }
-);
-
-// observer.observe(aboutImg);
-
-/*----- Observer Translate Y ------*/
-
-const observerII = new IntersectionObserver(
-  (enter) => {
-    for (const entry of enter) {
-      if (entry.isIntersecting) {
-        entry.target.style.transform = "translateY(0px)";
-        entry.target.style.opacity = "1";
-      }
-    }
-  },
-  {
-    threshold: 0.3,
-  }
-);
-
-observerII.observe(skills);
-observerII.observe(folio);

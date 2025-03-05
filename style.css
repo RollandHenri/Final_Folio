@@ -128,7 +128,7 @@ nav ul li a:hover:after {
 header {
   position: relative;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   margin: 0 auto;
   height: 100vh;
@@ -150,7 +150,7 @@ header .headerHero {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 80%;
+  width: 100%;
 }
 header .headerHero .center,
 header .headerHero .down,
@@ -208,8 +208,6 @@ header .aboutImg {
   background: black;
   color: white;
   width: 100%;
-  transform: translateY(200px);
-  opacity: 0;
   transition: 0.8s ease-in-out;
 }
 #skills h2 {
@@ -240,7 +238,9 @@ header .aboutImg {
   border: 1px solid #5c1d3d;
   box-shadow: 5px 5px 20px #5c1d3d;
   border-radius: 15px;
-  transition: all 0.3 ease;
+  transform: translateY(200px);
+  opacity: 0;
+  transition: all 0.7s ease-out;
 }
 #skills .skillsLeft h3,
 #skills .skillsMid h3,
