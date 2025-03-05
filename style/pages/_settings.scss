@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+  background: black;
+  height: auto;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  &:visited {
+    color: none;
+  }
+}

@@ -1,0 +1,75 @@
+#skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  margin: 0 auto 300px auto;
+  background: black;
+  color: white;
+  width: 100%;
+  transform: translateY(200px);
+  opacity: 0;
+  transition: 0.8s ease-in-out;
+  & h2 {
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 50px auto;
+    padding-bottom: 40px;
+    font-size: 2rem;
+    color: $color3;
+  }
+  & .skillsContain {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: start;
+    text-align: center;
+  }
+
+  & .skillsLeft,
+  .skillsMid,
+  .skillsRight {
+    width: 30%;
+    min-width: 400px;
+    height: 450px;
+    min-height: 380px;
+    margin: 30px 15px;
+    border: 1px solid $color1;
+    box-shadow: 5px 5px 20px $color1;
+    border-radius: 15px;
+    transition: all 0.3 ease;
+    & h3 {
+      margin: 20px auto 50px auto;
+      color: $color3;
+      font-size: 1.5rem;
+    }
+    & .skillsPara {
+      padding: 30px;
+      font-size: 1.1rem;
+      line-height: 30px;
+      text-align: start;
+    }
+  }
+  & .iconLeft,
+  .iconRight {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 30px;
+    & .iconFlex {
+      & i {
+        font-size: 4rem;
+        margin: 20px 0;
+        transition: 0.25s ease;
+        cursor: pointer;
+        &:hover {
+          transform: scale(1.1);
+          transition: 0.25s ease;
+        }
+      }
+    }
+  }
+}
