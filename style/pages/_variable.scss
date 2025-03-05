@@ -20,12 +20,14 @@ $color3: #d4b3a5;
 @keyframes onLoadBefor {
   0% {
     opacity: 1;
-    z-index: 5;
+    height: 100vh;
   }
 
   100% {
     opacity: 0;
-    z-index: -5;
+    height: 0;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
   }
 }
 

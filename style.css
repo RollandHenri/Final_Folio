@@ -13,11 +13,13 @@
 @keyframes onLoadBefor {
   0% {
     opacity: 1;
-    z-index: 5;
+    height: 100vh;
   }
   100% {
     opacity: 0;
-    z-index: -5;
+    height: 0;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
   }
 }
 @keyframes onLoadTranslate {
@@ -141,9 +143,11 @@ header {
 header::before {
   content: "";
   position: absolute;
+  top: 0;
+  left: 0;
   height: 100vh;
   width: 100%;
-  background: white;
+  background: #d4b3a5;
   animation: onLoadBefor 1s ease-in-out forwards;
 }
 header .headerHero {
@@ -312,7 +316,7 @@ header .aboutImg {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin: 25px auto;
+  margin: 50px auto;
   background: transparent;
 }
 #folio .folioContain .folioList .listCardContainer .listCard {
@@ -336,7 +340,7 @@ header .aboutImg {
   background: rgb(0, 0, 0);
   background: linear-gradient(90deg, rgb(0, 0, 0) 2%, rgb(87, 22, 55) 70%);
   opacity: 0;
-  transition: all 0.5s ease;
+  transition: all 0.5s ease-in-out;
 }
 #folio .folioContain .folioList .listCardContainer .effect h3 {
   padding: 15px;
@@ -345,7 +349,7 @@ header .aboutImg {
 }
 #folio .folioContain .folioList .listCardContainer .effect p {
   text-align: center;
-  padding: 15px;
+  padding: 5px;
   color: #d4b3a5;
 }
 #folio .folioContain .folioList .listCardContainer .effect button {

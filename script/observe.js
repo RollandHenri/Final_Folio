@@ -74,81 +74,26 @@ const observeRight = new IntersectionObserver(
 observeRight.observe(skillsRight);
 
 /*---------- Observe Folio -----------*/
-//**** Observe Card1 */
+//**** Observe Card */
 
-const observeCard1 = new IntersectionObserver(
+const observeCard = new IntersectionObserver(
   (enter) => {
     for (const entry of enter) {
       if (entry.isIntersecting) {
-        entry.target.style.transitionDelay = "0.4s";
+        entry.target.style.transitionDelay = "0.3s";
         entry.target.style.transform = "translateX(0px)";
         entry.target.style.opacity = "1";
       }
     }
   },
   {
-    threshold: 0.3,
+    threshold: 0.4,
   }
 );
 
-observeCard1.observe(card1);
-
-//**** Observe Card2 */
-
-const observeCard2 = new IntersectionObserver(
-  (enter) => {
-    for (const entry of enter) {
-      if (entry.isIntersecting) {
-        entry.target.style.transitionDelay = "0.6s";
-        entry.target.style.transform = "translateX(0px)";
-        entry.target.style.opacity = "1";
-      }
-    }
-  },
-  {
-    threshold: 0.3,
-  }
-);
-
-observeCard2.observe(card2);
-
-//**** Observe Card3 */
-
-const observeCard3 = new IntersectionObserver(
-  (enter) => {
-    for (const entry of enter) {
-      if (entry.isIntersecting) {
-        entry.target.style.transitionDelay = "0.5s";
-        entry.target.style.transform = "translateX(0px)";
-        entry.target.style.opacity = "1";
-      }
-    }
-  },
-  {
-    threshold: 0.3,
-  }
-);
-
-observeCard3.observe(card3);
-
-//**** Observe Card4 */
-
-// const observeCard4 = new IntersectionObserver(
-//   (enter) => {
-//     for (const entry of enter) {
-//       if (entry.isIntersecting) {
-//         entry.target.style.transitionDelay = "0.7s";
-//         entry.target.style.transform = "translateX(0px)";
-//         entry.target.style.opacity = "1";
-//       }
-//     }
-//   },
-//   {
-//     threshold: 0.3,
-//   }
-// );
-
-// observeCard4.observe(card4);
+observeCard.observe(card1);
+observeCard.observe(card2);
+observeCard.observe(card3);
 
 /*----- Observer Opacity ------*/
 
@@ -156,7 +101,7 @@ const opacity = new IntersectionObserver(
   (enter) => {
     for (const entry of enter) {
       if (entry.isIntersecting) {
-        entry.target.style.transitionDelay = "1s";
+        entry.target.style.transitionDelay = "0.4s";
         entry.target.style.opacity = "1";
       }
     }

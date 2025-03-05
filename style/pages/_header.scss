@@ -18,9 +18,11 @@ header {
   &::before {
     content: "";
     position: absolute;
+    top: 0;
+    left: 0;
     height: 100vh;
     width: 100%;
-    background: white;
+    background: $color3;
     animation: onLoadBefor 1s ease-in-out forwards;
   }
   & .headerHero {

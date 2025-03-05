@@ -106,16 +106,22 @@ folio.innerHTML = `
       <div class="listCardContainer">
         <div class="listCard card1"> </div>
          <div class='effect'> 
-           <h3> HTML / SASS </h3>
-           <p> Un site développé uniquement en HTML et CSS (SASS) </p> 
+           <h3> Restaurant </h3>
+           <p> Un site internet pour un restaurant. Site développé en HTML / SASS / JavaScript </p> 
+           <p> Mise en place d'un calendrier de réservations</p>
+           <p> Utilisation d'API pour géolocaliser le restaurant sur Google Map</p> 
+           <p> Utilisation du JavaScript pour les animations</p>
           <button><a href='#'> En savoir plus </a> </button>
          </div>
        </div>
 
 <div class="listCardContainer">
   <div class='effect second'>
-    <h3> HTML / SASS </h3>
+    <h3> La Montagne </h3>
     <p> Un site développé uniquement en HTML et CSS (SASS) </p> 
+    <p> Site vitrine avec des articles de Randonées</p>
+    <p> Utilisation de SASS pour optimiser le CSS</p>
+    <p> Utilisation de JavaScript pour les animations</p>
     <button><a href='#'> En savoir plus </a> </button>
   </div> 
   <div class="listCard card2"> </div>
@@ -124,8 +130,11 @@ folio.innerHTML = `
 <div class="listCardContainer">  
   <div class="listCard card3"> </div>
     <div class='effect'>
-      <h3> HTML / SASS </h3>
-      <p> Un site développé en HTML / SASS / JavaScrip </p> 
+      <h3> Run </h3>
+      <p> Un site développé en HTML / SASS / JavaScript </p> 
+      <p> Site vitrine pour de la course à pieds </p>
+      <p> Mise en place d'un formulaire de contact</p>
+      <p> Utilisation de SASS pour optimiser le CSS</p>
       <button><a href='#'> En savoir plus </a> </button>
       </div> 
     </div>
