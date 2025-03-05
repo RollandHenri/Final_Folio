@@ -23,7 +23,7 @@ nav.innerHTML = `
 <div class="logo"> </div>
 
 <ul>
-<li> <a href='#skills'> Skills </a> </li>
+<li> <a href='#skills'> Compétences </a> </li>
 <li> <a href="#folio"> Folio </a></li>
 <li> <a href="mailto:rolland.h.dev@gmail.com"> Contact </a></li>
 </ul>
@@ -102,35 +102,33 @@ skills.innerHTML = `
 folio.innerHTML = `
 <div class='folioContain'> 
   <h2> Folio </h2>  
-  <div class="folioList"> 
-  <div class="listCard card1">
-    <div class='effect'> 
+    <div class="folioList"> 
+      <div class="listCardContainer">
+        <div class="listCard card1"> </div>
+         <div class='effect'> 
+           <h3> HTML / SASS </h3>
+           <p> Un site développé uniquement en HTML et CSS (SASS) </p> 
+          <button><a href='#'> En savoir plus </a> </button>
+         </div>
+       </div>
+
+<div class="listCardContainer">
+  <div class='effect second'>
     <h3> HTML / SASS </h3>
     <p> Un site développé uniquement en HTML et CSS (SASS) </p> 
     <button><a href='#'> En savoir plus </a> </button>
+  </div> 
+  <div class="listCard card2"> </div>
+</div>
+
+<div class="listCardContainer">  
+  <div class="listCard card3"> </div>
+    <div class='effect'>
+      <h3> HTML / SASS </h3>
+      <p> Un site développé en HTML / SASS / JavaScrip </p> 
+      <button><a href='#'> En savoir plus </a> </button>
+      </div> 
     </div>
-  </div>
-  <div class="listCard card2"> 
-    <div class='effect'>
-    <h3> HTML / SASS </h3>
-    <p> Un site développé uniquement en HTML et CSS (SASS) </p> 
-    <button><a href='#'> En savoir plus </a> </button>
-    </div> 
-  </div>
-  <div class="listCard card3"> 
-    <div class='effect'>
-    <h3> HTML / SASS </h3>
-    <p> Un site développé en HTML / SASS / JavaScrip </p> 
-    <button><a href='#'> En savoir plus </a> </button>
-    </div> 
-  </div>
-  <div class="listCard card4">
-    <div class='effect'>
-    <h3> JavaScript / SASS </h3>
-    <p> Un site développé principalement en JavaScript et SASS ce qui en fait un site internet dynamique et fluide</p> 
-    <button><a href='#'> En savoir plus </a> </button>
-    </div>
-  </div>
   </div>
 </div>
 `;

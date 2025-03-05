@@ -9,6 +9,11 @@ const card2 = document.querySelector(".card2");
 const card3 = document.querySelector(".card3");
 const card4 = document.querySelector(".card4");
 
+/*-------- Variables Folio Description --------*/
+
+const description = document.querySelectorAll(".effect");
+console.log(description);
+
 /*--------- Observer Skills -----------*/
 
 //**** Observer Left */
@@ -128,20 +133,39 @@ observeCard3.observe(card3);
 
 //**** Observe Card4 */
 
-const observeCard4 = new IntersectionObserver(
+// const observeCard4 = new IntersectionObserver(
+//   (enter) => {
+//     for (const entry of enter) {
+//       if (entry.isIntersecting) {
+//         entry.target.style.transitionDelay = "0.7s";
+//         entry.target.style.transform = "translateX(0px)";
+//         entry.target.style.opacity = "1";
+//       }
+//     }
+//   },
+//   {
+//     threshold: 0.3,
+//   }
+// );
+
+// observeCard4.observe(card4);
+
+/*----- Observer Opacity ------*/
+
+const opacity = new IntersectionObserver(
   (enter) => {
     for (const entry of enter) {
       if (entry.isIntersecting) {
-        entry.target.style.transitionDelay = "0.7s";
-        entry.target.style.transform = "translateX(0px)";
+        entry.target.style.transitionDelay = "1s";
         entry.target.style.opacity = "1";
       }
     }
   },
   {
-    threshold: 0.3,
+    threshold: 0.4,
   }
 );
 
-observeCard4.observe(card4);
-/*----- Observer Translate Y ------*/
+description.forEach((enter) => {
+  opacity.observe(enter);
+});

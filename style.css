@@ -299,46 +299,56 @@ header .aboutImg {
 }
 #folio .folioContain .folioList {
   width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
-  justify-items: center;
-  grid-gap: 40px;
   margin: 0 auto;
 }
-#folio .folioContain .folioList .listCard {
+#folio .folioContain .folioList .listCardContainer {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 25px auto;
+  background: transparent;
+}
+#folio .folioContain .folioList .listCardContainer .listCard {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 80%;
+  width: 50%;
   height: 400px;
+  border-radius: 10px;
   background: transparent;
   transition: all 0.5s ease-in-out;
 }
-#folio .folioContain .folioList .listCard .effect {
-  width: 80%;
-  height: 80%;
+#folio .folioContain .folioList .listCardContainer .effect {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 40%;
+  height: 400px;
   border-radius: 10px;
-  background-color: rgba(92, 29, 61, 0.8980392157);
-  margin: 0 auto;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(90deg, rgb(0, 0, 0) 2%, rgb(87, 22, 55) 70%);
   opacity: 0;
-  cursor: pointer;
-  transition: 0.6s ease-in-out;
+  transition: all 0.5s ease;
 }
-#folio .folioContain .folioList .listCard .effect h3 {
+#folio .folioContain .folioList .listCardContainer .effect h3 {
   padding: 15px;
   color: #d4b3a5;
   text-align: center;
-  opacity: 0;
 }
-#folio .folioContain .folioList .listCard .effect p {
+#folio .folioContain .folioList .listCardContainer .effect p {
   text-align: center;
   padding: 15px;
   color: #d4b3a5;
-  opacity: 0;
 }
-#folio .folioContain .folioList .listCard .effect button {
+#folio .folioContain .folioList .listCardContainer .effect button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -351,39 +361,28 @@ header .aboutImg {
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
 }
-#folio .folioContain .folioList .listCard .effect button a {
+#folio .folioContain .folioList .listCardContainer .effect button a {
   text-decoration: none;
   color: white;
   font-size: 1.1rem;
 }
-#folio .folioContain .folioList .listCard:hover > .effect {
-  transition: 0.6s ease-in-out;
-  opacity: 1;
+#folio .folioContain .folioList .listCardContainer .second {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(270deg, rgb(0, 0, 0) 2%, rgb(87, 22, 55) 70%);
 }
-#folio .folioContain .folioList .listCard:hover > .effect h3 {
-  opacity: 1;
-}
-#folio .folioContain .folioList .listCard:hover > .effect p {
-  opacity: 1;
-}
-#folio .folioContain .folioList .card1 {
-  background: url("../../assets/img/card1.webp") center/cover;
+#folio .folioContain .folioList .listCardContainer .card1 {
+  background: url("/assets/img/Le_Resto.webp") center/cover;
   transform: translateX(-100px);
   opacity: 0;
 }
-#folio .folioContain .folioList .card2 {
-  background: url("../../assets/img/card2.webp") center/cover;
+#folio .folioContain .folioList .listCardContainer .card2 {
+  background: url("/assets/img/La_montagne.webp") center/cover;
   transform: translateX(100px);
   opacity: 0;
 }
-#folio .folioContain .folioList .card3 {
-  background: url("../../assets/img/card3.webp") center/cover;
+#folio .folioContain .folioList .listCardContainer .card3 {
+  background: url("/assets/img/Run.webp") center/cover;
   transform: translateX(-100px);
-  opacity: 0;
-}
-#folio .folioContain .folioList .card4 {
-  background: url("../../assets/img/card4.webp") center/cover;
-  transform: translateX(100px);
   opacity: 0;
 }
 
