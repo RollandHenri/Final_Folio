@@ -85,8 +85,8 @@ nav {
   animation: onLoadNav 1s ease forwards 1.5s;
 }
 nav .logo {
-  width: 130px;
-  height: 70px;
+  width: 100px;
+  height: 60px;
   background: url("/assets/icon/logo.webp") center/cover;
 }
 nav ul {
@@ -175,6 +175,7 @@ header .mid {
 header .down {
   font-size: 1.2rem;
   margin-bottom: 40px;
+  color: #d4b3a5;
 }
 header .logoLink {
   display: flex;
@@ -204,7 +205,7 @@ header .aboutImg {
   flex-direction: column;
   justify-content: center;
   align-content: center;
-  margin: 0 auto 300px auto;
+  margin: 0 auto 200px auto;
   background: black;
   color: white;
   width: 100%;
@@ -283,9 +284,6 @@ header .aboutImg {
   margin: 80px auto;
   padding-bottom: 80px;
   background: black;
-  opacity: 0;
-  transform: translateY(150px);
-  transition: 1.5s ease;
 }
 #folio .folioContain {
   width: 100%;
@@ -316,6 +314,7 @@ header .aboutImg {
   width: 80%;
   height: 400px;
   background: transparent;
+  transition: all 0.5s ease-in-out;
 }
 #folio .folioContain .folioList .listCard .effect {
   width: 80%;
@@ -369,15 +368,23 @@ header .aboutImg {
 }
 #folio .folioContain .folioList .card1 {
   background: url("../../assets/img/card1.webp") center/cover;
+  transform: translateX(-100px);
+  opacity: 0;
 }
 #folio .folioContain .folioList .card2 {
   background: url("../../assets/img/card2.webp") center/cover;
+  transform: translateX(100px);
+  opacity: 0;
 }
 #folio .folioContain .folioList .card3 {
   background: url("../../assets/img/card3.webp") center/cover;
+  transform: translateX(-100px);
+  opacity: 0;
 }
 #folio .folioContain .folioList .card4 {
   background: url("../../assets/img/card4.webp") center/cover;
+  transform: translateX(100px);
+  opacity: 0;
 }
 
 #footer {
