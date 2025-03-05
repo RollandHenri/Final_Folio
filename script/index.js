@@ -30,7 +30,7 @@ nav.innerHTML = `
 `;
 
 skills.innerHTML = `
-<h2> Mes compétences </h2>
+<h2> Compétences </h2>
 <div class='skillsContain'>
 <div class="skillsLeft"> 
     <h3> Développement Front-End </h3>
@@ -150,7 +150,7 @@ footer.innerHTML = `
     <li><a href='twiter.com'><i class="fa-brands fa-twitter"></i> Twitter </a> </li>
     <li><a href='instagram.comm'><i class="fa-brands fa-instagram"> </i> Instag</a> </li>
   </ul>
-  <h3> Site créé par Rolland-Dev </br> </br> En 2024 </h3>
+  <h3> Site créé From Scratch par Rolland-Dev / 2024 </h3>
   
 </div>
 
