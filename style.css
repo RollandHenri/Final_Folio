@@ -155,10 +155,18 @@ header .headerHero {
   justify-content: space-around;
   align-items: center;
   width: 100%;
+  height: 100%;
 }
-header .headerHero .center,
-header .headerHero .down,
-header .headerHero .logoLink {
+header .headerHero .headerHeroLeft {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 500px;
+}
+header .headerHero .headerHeroLeft .center,
+header .headerHero .headerHeroLeft .down,
+header .headerHero .headerHeroLeft .logoLink {
   opacity: 0;
   animation: fadeIn 1s ease forwards 1s;
 }
@@ -171,20 +179,44 @@ header .up {
   margin-bottom: 40px;
   font-size: 1.3rem;
 }
+header .up h2 {
+  font-family: "Poiret One", sans-serif;
+  font-weight: 700;
+  font-size: 2.3rem;
+  letter-spacing: 2px;
+}
 header .mid {
   text-align: center;
   font-size: 1.5rem;
   margin-bottom: 30px;
 }
+header .mid h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 3.3rem;
+  letter-spacing: 2px;
+  font-weight: 900;
+}
 header .down {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
   font-size: 1.2rem;
   margin-bottom: 40px;
   color: #d4b3a5;
+}
+header .down h2 {
+  font-family: "Poiret One", sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  letter-spacing: 2px;
 }
 header .logoLink {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  width: 100%;
 }
 header .logoLink img {
   transition: all 0.4s ease;
@@ -217,13 +249,24 @@ header .aboutImg {
 }
 #skills h2 {
   position: relative;
+  font-family: "Poiret One", sans-serif;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 2px;
   margin: 50px auto;
   padding-bottom: 40px;
-  font-size: 2rem;
+  font-size: 2.3rem;
   color: #d4b3a5;
+}
+#skills h2:after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 2px;
+  background: #d4b3a5;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 #skills .skillsContain {
   display: flex;
@@ -241,8 +284,10 @@ header .aboutImg {
   min-height: 380px;
   margin: 30px 15px;
   border: 1px solid #5c1d3d;
-  box-shadow: 5px 5px 20px #5c1d3d;
+  box-shadow: 5px 5px 20px rgba(255, 255, 255, 0.24);
   border-radius: 15px;
+  background: rgb(89, 22, 56);
+  background: radial-gradient(circle, rgba(89, 22, 56, 0) 55%, rgb(89, 22, 56) 91%);
   transform: translateY(200px);
   opacity: 0;
   transition: all 0.7s ease-out;
@@ -252,7 +297,9 @@ header .aboutImg {
 #skills .skillsRight h3 {
   margin: 20px auto 50px auto;
   color: #d4b3a5;
-  font-size: 1.5rem;
+  font-family: "poiret One", sans-serif;
+  font-size: 2rem;
+  letter-spacing: 2px;
 }
 #skills .skillsLeft .skillsPara,
 #skills .skillsMid .skillsPara,
@@ -281,6 +328,7 @@ header .aboutImg {
 #skills .iconRight .iconFlex i:hover {
   transform: scale(1.1);
   transition: 0.25s ease;
+  color: #d4b3a5;
 }
 
 #folio {
@@ -294,12 +342,25 @@ header .aboutImg {
   height: 100%;
 }
 #folio .folioContain h2 {
+  position: relative;
   text-align: center;
+  font-family: "Poiret One", sans-serif;
   padding: 50px 0;
   margin-bottom: 80px;
-  font-size: 2rem;
+  font-size: 2.3rem;
+  letter-spacing: 2px;
   text-transform: uppercase;
   color: #d4b3a5;
+}
+#folio .folioContain h2::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 2px;
+  background: #d4b3a5;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 #folio .folioContain .folioList {
   width: 100%;
@@ -346,6 +407,9 @@ header .aboutImg {
   padding: 15px;
   color: #d4b3a5;
   text-align: center;
+  font-family: "Poiret One", sans-serif;
+  font-size: 1.8rem;
+  letter-spacing: 2px;
 }
 #folio .folioContain .folioList .listCardContainer .effect p {
   text-align: center;
@@ -434,4 +498,5 @@ header .aboutImg {
 }
 #footer h3 {
   color: #d4b3a5;
+  font-family: "Poiret One", sans-serif;
 }/*# sourceMappingURL=style.css.map */

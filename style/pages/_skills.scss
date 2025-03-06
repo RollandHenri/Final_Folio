@@ -12,13 +12,24 @@
   transition: 0.8s ease-in-out;
   & h2 {
     position: relative;
+    font-family: "Poiret One", sans-serif;
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 2px;
     margin: 50px auto;
     padding-bottom: 40px;
-    font-size: 2rem;
+    font-size: 2.3rem;
     color: $color3;
+    &:after {
+      content: "";
+      position: absolute;
+      width: 100px;
+      height: 2px;
+      background: $color3;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
   }
   & .skillsContain {
     display: flex;
@@ -37,15 +48,23 @@
     min-height: 380px;
     margin: 30px 15px;
     border: 1px solid $color1;
-    box-shadow: 5px 5px 20px $color1;
+    box-shadow: 5px 5px 20px rgba(255, 255, 255, 0.24);
     border-radius: 15px;
+    background: rgb(89, 22, 56);
+    background: radial-gradient(
+      circle,
+      rgba(89, 22, 56, 0) 55%,
+      rgba(89, 22, 56, 1) 91%
+    );
     transform: translateY(200px);
     opacity: 0;
     transition: all 0.7s ease-out;
     & h3 {
       margin: 20px auto 50px auto;
       color: $color3;
-      font-size: 1.5rem;
+      font-family: "poiret One", sans-serif;
+      font-size: 2rem;
+      letter-spacing: 2px;
     }
     & .skillsPara {
       padding: 30px;
@@ -70,6 +89,7 @@
         &:hover {
           transform: scale(1.1);
           transition: 0.25s ease;
+          color: $color3;
         }
       }
     }
