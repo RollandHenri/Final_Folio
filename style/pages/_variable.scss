@@ -64,3 +64,17 @@ $color3: #d4b3a5;
     opacity: 1;
   }
 }
+
+@keyframes scrollAnim {
+  0% {
+    transform: translateY(-25px);
+  }
+
+  50% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-25px);
+  }
+}

@@ -114,3 +114,8 @@ const opacity = new IntersectionObserver(
 description.forEach((enter) => {
   opacity.observe(enter);
 });
+
+/*------ Scroll Logo ------*/
+
+const scroll = document.querySelector(".scroll");
+console.log(scroll);

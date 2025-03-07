@@ -50,6 +50,17 @@
     opacity: 1;
   }
 }
+@keyframes scrollAnim {
+  0% {
+    transform: translateY(-25px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-25px);
+  }
+}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -234,6 +245,21 @@ header .aboutImg {
   transform: translateX(200px);
   animation: onLoadTranslate 0.8s ease forwards 1.3s;
   transition: 1.2s ease-in-out;
+}
+header .scrollIcon {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: scrollAnim 1.5s ease-in-out infinite;
+}
+header .scrollIcon i {
+  font-size: 2.3rem;
 }
 
 #skills {

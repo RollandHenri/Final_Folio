@@ -112,4 +112,20 @@ header {
     animation: onLoadTranslate 0.8s ease forwards 1.3s;
     transition: 1.2s ease-in-out;
   }
+
+  & .scrollIcon {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: scrollAnim 1.5s ease-in-out infinite;
+    & i {
+      font-size: 2.3rem;
+    }
+  }
 }
