@@ -120,7 +120,7 @@ const scrollIcon = document.querySelector(".scrollIcon");
 
 window.addEventListener("scroll", () => {
   console.log(window.scrollY);
-  if (window.scrollY > 400) {
+  if (window.scrollY > 300) {
     scrollIcon.style.opacity = "0";
     scrollIcon.style.transition = "0.7s ease-in-out";
   } else {

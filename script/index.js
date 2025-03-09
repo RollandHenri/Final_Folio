@@ -23,6 +23,7 @@ nav.innerHTML = `
 <div class="logo"> </div>
 
 <ul>
+<li> <a href='#'> Accueil </a> </li>
 <li> <a href='#skills'> Compétences </a> </li>
 <li> <a href="#folio"> Folio </a></li>
 <li> <a href="mailto:rolland.h.dev@gmail.com"> Contact </a></li>
@@ -111,7 +112,7 @@ folio.innerHTML = `
            <p> Mise en place d'un calendrier de réservations</p>
            <p> Utilisation d'API pour géolocaliser le restaurant sur Google Map</p> 
            <p> Utilisation du JavaScript pour les animations</p>
-          <button><a href='#'> En savoir plus </a> </button>
+          <button><a href='/pages/folio1.html'> En savoir plus </a> </button>
          </div>
        </div>
 
@@ -122,7 +123,7 @@ folio.innerHTML = `
         <p> Site vitrine avec des articles de Randonées</p>
         <p> Utilisation de SASS pour optimiser le CSS</p>
         <p> Utilisation de JavaScript pour les animations</p>
-          <button><a href='#'> En savoir plus </a> </button>
+          <button><a href="/pages/folio2.html"> En savoir plus </a> </button>
       </div> 
   <div class="listCard card2"> </div>
 </div>
@@ -135,7 +136,7 @@ folio.innerHTML = `
       <p> Site vitrine pour de la course à pieds </p>
       <p> Mise en place d'un formulaire de contact</p>
       <p> Utilisation de SASS pour optimiser le CSS</p>
-      <button><a href='#'> En savoir plus </a> </button>
+      <button><a href="/pages/folio3.html"> En savoir plus </a> </button>
       </div> 
     </div>
   </div>
