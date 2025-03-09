@@ -116,14 +116,14 @@ folio.innerHTML = `
        </div>
 
 <div class="listCardContainer">
-  <div class='effect second'>
-    <h3> La Montagne </h3>
-    <p> Un site développé uniquement en HTML et CSS (SASS) </p> 
-    <p> Site vitrine avec des articles de Randonées</p>
-    <p> Utilisation de SASS pour optimiser le CSS</p>
-    <p> Utilisation de JavaScript pour les animations</p>
-    <button><a href='#'> En savoir plus </a> </button>
-  </div> 
+    <div class='effect second'>
+      <h3> La Montagne </h3>
+        <p> Un site développé uniquement en HTML et CSS (SASS) </p> 
+        <p> Site vitrine avec des articles de Randonées</p>
+        <p> Utilisation de SASS pour optimiser le CSS</p>
+        <p> Utilisation de JavaScript pour les animations</p>
+          <button><a href='#'> En savoir plus </a> </button>
+      </div> 
   <div class="listCard card2"> </div>
 </div>
 

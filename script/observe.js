@@ -12,7 +12,6 @@ const card4 = document.querySelector(".card4");
 /*-------- Variables Folio Description --------*/
 
 const description = document.querySelectorAll(".effect");
-console.log(description);
 
 /*--------- Observer Skills -----------*/
 
@@ -117,5 +116,15 @@ description.forEach((enter) => {
 
 /*------ Scroll Logo ------*/
 
-const scroll = document.querySelector(".scroll");
-console.log(scroll);
+const scrollIcon = document.querySelector(".scrollIcon");
+
+window.addEventListener("scroll", () => {
+  console.log(window.scrollY);
+  if (window.scrollY > 400) {
+    scrollIcon.style.opacity = "0";
+    scrollIcon.style.transition = "0.7s ease-in-out";
+  } else {
+    scrollIcon.style.opacity = "1";
+    scrollIcon.style.transition = "0.7s ease-in-out";
+  }
+});
