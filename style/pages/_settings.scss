@@ -14,7 +14,7 @@ body {
   overflow-x: hidden;
   & .menuMobile {
     display: none;
-    position: fixed;
+    position: absolute;
     top: 20px;
     left: 20px;
     width: 32px;
@@ -24,7 +24,17 @@ body {
     transition: all 0.5s ease-in-out;
     @include middle {
       display: block;
+      position: fixed;
+      top: 20px;
+      left: 20px;
     }
+    @include mobile {
+      display: block;
+      position: fixed;
+      top: 20px;
+      left: 20px;
+    }
+
     & i {
       font-size: 2rem;
     }

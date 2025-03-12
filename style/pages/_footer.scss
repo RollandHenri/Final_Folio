@@ -9,7 +9,7 @@
     rgba(0, 0, 0, 1) 75%
   );
   @include mobile {
-    height: 250px;
+    height: 330px;
   }
   & .footerList {
     display: flex;
@@ -52,6 +52,7 @@
           flex-direction: column;
           align-items: center;
           justify-content: center;
+          margin-bottom: 15px;
         }
       }
       & li {
@@ -63,6 +64,10 @@
         @include tablet {
           width: 100%;
           margin-right: 40px;
+        }
+        @include mobile {
+          width: 100%;
+          margin-bottom: 20px;
         }
         & a {
           width: 100%;
