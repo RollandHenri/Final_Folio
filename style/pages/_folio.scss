@@ -43,6 +43,9 @@
         align-items: center;
         margin: 50px auto;
         background: transparent;
+        @include middle {
+          flex-direction: column;
+        }
         & .listCard {
           display: flex;
           justify-content: center;
@@ -52,6 +55,9 @@
           border-radius: 10px;
           background: transparent;
           transition: all 0.5s ease-in-out;
+          @include middle {
+            width: 90%;
+          }
         }
         & .effect {
           display: flex;
@@ -69,6 +75,9 @@
           );
           opacity: 0;
           transition: all 0.5s ease-in-out;
+          @include middle {
+            width: 90%;
+          }
           & h3 {
             padding: 15px;
             color: $color3;

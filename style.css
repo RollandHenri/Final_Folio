@@ -496,6 +496,11 @@ header .scrollIcon i {
   margin: 50px auto;
   background: transparent;
 }
+@media (max-width: 650px) {
+  #folio .folioContain .folioList .listCardContainer {
+    flex-direction: column;
+  }
+}
 #folio .folioContain .folioList .listCardContainer .listCard {
   display: flex;
   justify-content: center;
@@ -505,6 +510,11 @@ header .scrollIcon i {
   border-radius: 10px;
   background: transparent;
   transition: all 0.5s ease-in-out;
+}
+@media (max-width: 650px) {
+  #folio .folioContain .folioList .listCardContainer .listCard {
+    width: 90%;
+  }
 }
 #folio .folioContain .folioList .listCardContainer .effect {
   display: flex;
@@ -518,6 +528,11 @@ header .scrollIcon i {
   background: linear-gradient(90deg, rgb(0, 0, 0) 2%, rgb(87, 22, 55) 70%);
   opacity: 0;
   transition: all 0.5s ease-in-out;
+}
+@media (max-width: 650px) {
+  #folio .folioContain .folioList .listCardContainer .effect {
+    width: 90%;
+  }
 }
 #folio .folioContain .folioList .listCardContainer .effect h3 {
   padding: 15px;
