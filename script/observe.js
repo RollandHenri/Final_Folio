@@ -13,6 +13,42 @@ const card4 = document.querySelector(".card4");
 
 const description = document.querySelectorAll(".effect");
 
+/*--------- Variable Nav Mobile -----------*/
+
+const openMenu = document.querySelector(".menuMobile");
+const menu = document.querySelector(".nav");
+const menuClose = document.querySelector(".closeMobile");
+
+const link = document.querySelectorAll("nav a");
+console.log(link);
+
+/*--------- EventListener Nav Mobile -----------*/
+
+openMenu.addEventListener("click", () => {
+  nav.style.transform = "translateX(0)";
+  openMenu.style.transform = "translateX(-150px)";
+});
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 300) {
+    openMenu.style.color = "white ";
+  } else {
+    openMenu.style.color = "black";
+  }
+});
+
+menuClose.addEventListener("click", () => {
+  nav.style.transform = "translateX(-65vw)";
+  openMenu.style.transform = "translateX(0)";
+});
+
+link.forEach((links) => {
+  links.addEventListener("click", () => {
+    nav.style.transform = "translateX(-65vw)";
+    openMenu.style.transform = "translateX(0)";
+  });
+});
+
 /*--------- Observer Skills -----------*/
 
 //**** Observer Left */
@@ -62,6 +98,8 @@ const observeRight = new IntersectionObserver(
         entry.target.style.transitionDelay = "0.9s";
         entry.target.style.transform = "translateY(0px)";
         entry.target.style.opacity = "1";
+      } else if (window.matchMedia("(max-width: 768px)").matches) {
+        entry.target.style.transitionDelay = "0.6s";
       }
     }
   },

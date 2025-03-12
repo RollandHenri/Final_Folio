@@ -20,14 +20,18 @@ let scrollDown = 0;
 /*------ Create HTML ------*/
 
 nav.innerHTML = `
-<div class="logo"> </div>
+  <div class="closeMobile">
+      <i class="fa-solid fa-xmark"></i>
+  </div>
 
-<ul>
-<li> <a href='#'> Accueil </a> </li>
-<li> <a href='#skills'> Compétences </a> </li>
-<li> <a href="#folio"> Folio </a></li>
-<li> <a href="mailto:rolland.h.dev@gmail.com"> Contact </a></li>
-</ul>
+  <div class="logo"> </div>
+
+  <ul>
+    <li> <a href='#'> Accueil </a> </li>
+    <li> <a href='#skills'> Compétences </a> </li>
+    <li> <a href="#folio"> Folio </a></li>
+    <li> <a href="mailto:rolland.h.dev@gmail.com"> Contact </a></li>
+  </ul>
 `;
 
 skills.innerHTML = `
