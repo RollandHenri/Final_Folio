@@ -19,7 +19,7 @@ $color3: #d4b3a5;
 }
 
 @mixin mobile {
-  @media (max-width: 425px) {
+  @media (max-width: 440px) {
     @content;
   }
 }
