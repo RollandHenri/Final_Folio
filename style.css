@@ -1,4 +1,5 @@
 /*------------ Color -------------*/
+/*------------ Responsive -------------*/
 /*------------ KeyFrame ---------*/
 @keyframes onLoadNav {
   0% {
@@ -168,6 +169,11 @@ header .headerHero {
   width: 100%;
   height: 100%;
 }
+@media (max-width: 950px) {
+  header .headerHero {
+    flex-direction: column;
+  }
+}
 header .headerHero .headerHeroLeft {
   display: flex;
   flex-direction: column;
@@ -256,10 +262,10 @@ header .scrollIcon {
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: scrollAnim 1.5s ease-in-out infinite;
 }
 header .scrollIcon i {
   font-size: 2.3rem;
+  animation: scrollAnim 1.5s ease-in-out infinite;
 }
 
 #skills {
